@@ -32,8 +32,8 @@ void MainWindow::on_pushButton_clicked()
         //STEP 0 - Choosing bogdanka45 as active device
         case 0:{
             urzadzenie = "bogdanka15";
-            port = "12223";
-            ip = "213.17.176.90";
+            port = "xxxxx";
+            ip = "xxx.xxx.xx.xx";
             ui->textEdit->setText(QString::fromUtf8("Wybierz katalog w którym chcesz zapisać niezbędne do analizy dane (pliki R-ek oraz pliki z parametrami)"));
             ui->pushButton->setText(QString::fromUtf8("Wybierz katalog:"));
             ui->pushButton_bog45->setVisible(false);
@@ -44,7 +44,7 @@ void MainWindow::on_pushButton_clicked()
         //STEP 1 - Choosing catalogue to save parameters
         case 1:{
             dir = QFileDialog::getExistingDirectory(this, tr("Open Directory"), "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
-            std::string ip = "213.17.176.90";
+            std::string ip = "xxx.xxx.xx.xx";
             ui->textEdit->setText(QString::fromUtf8("Następnie wybierz dzień z którego chciałbyś pobrać pierwszą R-kę"));
             ui->pushButton->setText(QString::fromUtf8("Otwórz kalendarz:"));
             whichStep++;
@@ -124,8 +124,8 @@ void MainWindow::on_proceed_button_clicked()
 void MainWindow::on_pushButton_bog45_clicked()
 {
     urzadzenie = "bogdanka45";
-    port = "12229";
-    ip = "213.17.176.90";
+    port = "xxxxx";
+    ip = "xxx.xxx.xx.xx";
 
     ui->textEdit->setText(QString::fromUtf8("Wybierz katalog w którym chcesz zapisać niezbędne do analizy dane (pliki R-ek oraz pliki z parametrami)"));
     ui->pushButton->setText(QString::fromUtf8("Wybierz katalog:"));
@@ -141,7 +141,7 @@ void MainWindow::on_pushButton_sil390_clicked()
 {
     urzadzenie = "silesia390";
     port = "0";
-    ip = "10.91.16.3";
+    ip = "xxx.xxx.xx.xx";
 
     ui->textEdit->setText(QString::fromUtf8("Wybierz katalog w którym chcesz zapisać niezbędne do analizy dane (pliki R-ek oraz pliki z parametrami)"));
     ui->pushButton->setText(QString::fromUtf8("Wybierz katalog:"));
