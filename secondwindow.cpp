@@ -1,20 +1,16 @@
 #include "secondwindow.h"
 #include "ui_secondwindow.h"
 #include "fstream"
-#include "rka.h"
+#include "rdata.h"
 #include "errorpopup.h"
 #include "calculations.h"
 #include "thirdwindow.h"
 
-secondWindow::secondWindow(QWidget *parent, std::string patch, std::string urzadzenie_pass, std::string rName) :
+secondWindow::secondWindow(QWidget *parent, std::string patch, std::string devicePass, std::string rName) :
     QMainWindow(parent),
     ui(new Ui::secondWindow)
 {
     ui->setupUi(this);
-
-
-
-
 
     //getting data from Parametry.txt --------------------------------------------------------------------
     std::fstream file;
@@ -28,23 +24,23 @@ secondWindow::secondWindow(QWidget *parent, std::string patch, std::string urzad
         if(lineOfText.find("#") == std::string::npos){
             tempString = findInTextLine(lineOfText, "wspH=", 5);
             if(tempString.compare("")!=0){
-                parametry->setWspH(tempString.toDouble());
-                ui->label_parWspH->setText(QString::number(parametry->getWspH(),'t',1));
+                parameters->setWspH(tempString.toDouble());
+                ui->label_parWspH->setText(QString::number(parameters->getWspH(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "DT_Cs=", 6);
             if(tempString.compare("")!=0){
-                parametry->setDtCs(tempString.toDouble());
-                ui->label_dtCs->setText(QString::number(parametry->getDtCs(),'t',1));
+                parameters->setDtCs(tempString.toDouble());
+                ui->label_dtCs->setText(QString::number(parameters->getDtCs(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "DT_Am=", 6);
             if(tempString.compare("")!=0){
-                parametry->setDtAm(tempString.toDouble());
-                ui->label_dtAm->setText(QString::number(parametry->getDtAm(),'t',1));
+                parameters->setDtAm(tempString.toDouble());
+                ui->label_dtAm->setText(QString::number(parameters->getDtAm(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "Overlap=", 8);
             if(tempString.compare("")!=0){
-                parametry->setOverlap(tempString.toDouble());
-                ui->label_overlap->setText(QString::number(parametry->getOverlap(),'t',2));
+                parameters->setOverlap(tempString.toDouble());
+                ui->label_overlap->setText(QString::number(parameters->getOverlap(),'t',2));
             }
         }
     }
@@ -62,91 +58,91 @@ secondWindow::secondWindow(QWidget *parent, std::string patch, std::string urzad
         if(lineOfText.find("#")==std::string::npos){
             tempString = findInTextLine(lineOfText, "wspA0=", 6);
             if(tempString.compare("")!=0){
-                parametry->setA0(tempString.toDouble());
-                ui->label_wspA0->setText(QString::number(parametry->getA0(),'t',1));
+                parameters->setA0(tempString.toDouble());
+                ui->label_wspA0->setText(QString::number(parameters->getA0(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspA1=", 6);
             if(tempString.compare("")!=0){
-                parametry->setA1(tempString.toDouble());
-                ui->label_wspA1->setText(QString::number(parametry->getA1(),'t',1));
+                parameters->setA1(tempString.toDouble());
+                ui->label_wspA1->setText(QString::number(parameters->getA1(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspA2=", 6);
             if(tempString.compare("")!=0){
-                parametry->setA2(tempString.toDouble());
-                ui->label_wspA2->setText(QString::number(parametry->getA2(),'t',1));
+                parameters->setA2(tempString.toDouble());
+                ui->label_wspA2->setText(QString::number(parameters->getA2(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspQ0=", 6);
             if(tempString.compare("")!=0){
-                parametry->setQ0(tempString.toDouble());
-                ui->label_wspQ0->setText(QString::number(parametry->getQ0(),'t',1));
+                parameters->setQ0(tempString.toDouble());
+                ui->label_wspQ0->setText(QString::number(parameters->getQ0(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspQA=", 6);
             if(tempString.compare("")!=0){
-                parametry->setQA(tempString.toDouble());
-                ui->label_wspQA->setText(QString::number(parametry->getQA(),'t',1));
+                parameters->setQA(tempString.toDouble());
+                ui->label_wspQA->setText(QString::number(parameters->getQA(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspQM=", 6);
             if(tempString.compare("")!=0){
-                parametry->setQM(tempString.toDouble());
-                ui->label_wspQM->setText(QString::number(parametry->getQM(),'t',1));
+                parameters->setQM(tempString.toDouble());
+                ui->label_wspQM->setText(QString::number(parameters->getQM(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspM0=", 6);
             if(tempString.compare("")!=0){
-                parametry->setMM0(tempString.toDouble());
-                ui->label_wspMM0->setText(QString::number(parametry->getMM0(),'t',1));
+                parameters->setMM0(tempString.toDouble());
+                ui->label_wspMM0->setText(QString::number(parameters->getMM0(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspMM1=", 7);
             if(tempString.compare("")!=0){
-                parametry->setMM1(tempString.toDouble());
-                ui->label_wspMM1->setText(QString::number(parametry->getMM1(),'t',1));
+                parameters->setMM1(tempString.toDouble());
+                ui->label_wspMM1->setText(QString::number(parameters->getMM1(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspMM2=", 7);
             if(tempString.compare("")!=0){
-                parametry->setMM2(tempString.toDouble());
-                ui->label_wspMM2->setText(QString::number(parametry->getMM2(),'t',1));
+                parameters->setMM2(tempString.toDouble());
+                ui->label_wspMM2->setText(QString::number(parameters->getMM2(),'t',1));
             }
             tempString = findInTextLine(lineOfText, "wspP0=", 6);
             if(tempString.compare("")!=0){
-                parametry->setP0(tempString.toDouble());
+                parameters->setP0(tempString.toDouble());
             }
             tempString = findInTextLine(lineOfText, "wspP1=", 6);
             if(tempString.compare("")!=0){
-                parametry->setP1(tempString.toDouble());
+                parameters->setP1(tempString.toDouble());
 
             }
             tempString = findInTextLine(lineOfText, "wspP2=", 6);
             if(tempString.compare("")!=0){
-                parametry->setP2(tempString.toDouble());
+                parameters->setP2(tempString.toDouble());
             }
             tempString = findInTextLine(lineOfText, "wspP3=", 6);
             if(tempString.compare("")!=0){
-                parametry->setP3(tempString.toDouble());
+                parameters->setP3(tempString.toDouble());
             }
 
         }
     }
     file.close();
 
-    parametry->setUrzadzenie(urzadzenie_pass);
-    Rka *initR = new Rka(patch,rName,parametry->getUrzadzenie());
-    daneR = initR;
+    parameters->setDevice(devicePass);
+    RData *initR = new RData(patch,rName,parameters->getDevice());
+    rData = initR;
 
     QString tempString;
-    tempString = QString::number(daneR->getStdAm(0));
-    parametry->setStdAm(tempString.toDouble());
-    ui->label_parStdAm->setText(QString::number(parametry->getStdAm(),'t',0));
+    tempString = QString::number(rData->getStdAm(0));
+    parameters->setStdAm(tempString.toDouble());
+    ui->label_parStdAm->setText(QString::number(parameters->getStdAm(),'t',0));
 
-    tempString = QString::number(daneR->getStdCs(0));
-    parametry->setStdCs(tempString.toDouble());
-    ui->label_parStdCs->setText(QString::number(parametry->getStdCs(),'t',0));
+    tempString = QString::number(rData->getStdCs(0));
+    parameters->setStdCs(tempString.toDouble());
+    ui->label_parStdCs->setText(QString::number(parameters->getStdCs(),'t',0));
 
-    tempString = QString::number(daneR->getStdMoc(0));
-    parametry->setStdMoc(tempString.toDouble());
-    ui->label_parStdMoc->setText(QString::number(parametry->getStdMoc(),'t',0));
+    tempString = QString::number(rData->getStdPower(0));
+    parameters->setStdMoc(tempString.toDouble());
+    ui->label_parStdMoc->setText(QString::number(parameters->getStdMoc(),'t',0));
 
-    Calculations obliczenia(urzadzenie);
-    parametry->setPStdAm(obliczenia.calculatePAm(parametry, parametry->getStdAm(),parametry->getStdCs()));
-    parametry->setPStdCs(obliczenia.calculatePCs(parametry, parametry->getStdAm(),parametry->getStdCs()));
+    Calculations obliczenia(device);
+    parameters->setPStdAm(obliczenia.calculatePAm(parameters, parameters->getStdAm(),parameters->getStdCs()));
+    parameters->setPStdCs(obliczenia.calculatePCs(parameters, parameters->getStdAm(),parameters->getStdCs()));
 
     //hiding UI elements
     ui->line_standard->setVisible(false);
@@ -225,8 +221,8 @@ void secondWindow::on_pushButton_2_clicked()
         w->exec();
     }
     else{
-        pustaTasmaStart = daneR->findTimeIndex(time1);
-        pustaTasmaStop = daneR->findTimeIndex(time2);
+        emptyBeltStart = rData->findTimeIndex(time1);
+        emptyBeltStop = rData->findTimeIndex(time2);
         //hiding UI elements
         ui->pushButton->setVisible(false);
         ui->pushButton_2->setVisible(false);
@@ -247,12 +243,12 @@ void secondWindow::on_pushButton_2_clicked()
         ui->label_7->setVisible(true);
         ui->label_8->setVisible(true);
 
-        Calculations obliczenia(parametry->getUrzadzenie());
-        QString string = QString::number(obliczenia.standard(*daneR, pustaTasmaStart,pustaTasmaStop,"am"));
+        Calculations calculations(parameters->getDevice());
+        QString string = QString::number(calculations.standard(*rData, emptyBeltStart,emptyBeltStop,"am"));
         ui->lineEdit_stdAm->setText(string);
-        string = QString::number(obliczenia.standard(*daneR, pustaTasmaStart,pustaTasmaStop,"cs"));
+        string = QString::number(calculations.standard(*rData, emptyBeltStart,emptyBeltStop,"cs"));
         ui->lineEdit_stdCs->setText(string);
-        string = QString::number(obliczenia.standard(*daneR, pustaTasmaStart,pustaTasmaStop,"moc"));
+        string = QString::number(calculations.standard(*rData, emptyBeltStart,emptyBeltStop,"moc"));
         ui->lineEdit_stdMoc->setText(string);
         ui->pushButton_3->setVisible(true);
 
@@ -261,62 +257,59 @@ void secondWindow::on_pushButton_2_clicked()
 
 void secondWindow::on_pushButton_clicked()
 {
-    Calculations obliczenia(parametry->getUrzadzenie());
-    std::vector <size_t> indexVector = obliczenia.findEmptyBelt(*daneR);
-    pustaTasmaStart = indexVector[0];
-    pustaTasmaStop = indexVector[1];
-    QString tempQstring = QString::fromStdString(daneR->getGodzina(indexVector[0]));
+    Calculations calculations(parameters->getDevice());
+    std::vector <size_t> indexVector = calculations.findEmptyBelt(*rData);
+    emptyBeltStart = indexVector[0];
+    emptyBeltStop = indexVector[1];
+    QString tempQstring = QString::fromStdString(rData->getHour(indexVector[0]));
     QTime time = QTime::fromString(tempQstring,"HH:mm:ss");
     ui->timeEdit->setTime(time);
-    tempQstring = QString::fromStdString(daneR->getGodzina(indexVector[1]));
+    tempQstring = QString::fromStdString(rData->getHour(indexVector[1]));
     time = QTime::fromString(tempQstring,"HH:mm:ss");
     ui->timeEdit_2->setTime(time);
 }
 
-void secondWindow::on_radioButton_clicked()
-{}
-
 void secondWindow::on_radioButton_1_clicked()
 {
-    Calculations obliczenia(parametry->getUrzadzenie());
-    QString string = QString::number(obliczenia.standard(*daneR, pustaTasmaStart,pustaTasmaStop,"am"));
+    Calculations calculations(parameters->getDevice());
+    QString string = QString::number(calculations.standard(*rData, emptyBeltStart,emptyBeltStop,"am"));
     ui->lineEdit_stdAm->setText(string);
     ui->lineEdit_stdAm->setReadOnly(true);
 }
 
 void secondWindow::on_radioButton_4_clicked()
 {
-    Calculations obliczenia(parametry->getUrzadzenie());
-    QString string = QString::number(obliczenia.standard(*daneR, pustaTasmaStart,pustaTasmaStop,"cs"));
+    Calculations calculations(parameters->getDevice());
+    QString string = QString::number(calculations.standard(*rData, emptyBeltStart,emptyBeltStop,"cs"));
     ui->lineEdit_stdCs->setText(string);
     ui->lineEdit_stdCs->setReadOnly(true);
 }
 
 void secondWindow::on_radioButton_7_clicked()
 {
-    Calculations obliczenia(parametry->getUrzadzenie());
-    QString string = QString::number(obliczenia.standard(*daneR, pustaTasmaStart,pustaTasmaStop,"moc"));
+    Calculations calculations(parameters->getDevice());
+    QString string = QString::number(calculations.standard(*rData, emptyBeltStart,emptyBeltStop,"moc"));
     ui->lineEdit_stdMoc->setText(string);
     ui->lineEdit_stdMoc->setReadOnly(true);
 }
 
 void secondWindow::on_radioButton_2_clicked()
 {
-    QString string = QString::number(daneR->getStdAm(1));
+    QString string = QString::number(rData->getStdAm(1));
     ui->lineEdit_stdAm->setText(string);
     ui->lineEdit_stdAm->setReadOnly(true);
 }
 
 void secondWindow::on_radioButton_5_clicked()
 {
-    QString string = QString::number(daneR->getStdCs(1));
+    QString string = QString::number(rData->getStdCs(1));
     ui->lineEdit_stdCs->setText(string);
     ui->lineEdit_stdCs->setReadOnly(true);
 }
 
 void secondWindow::on_radioButton_8_clicked()
 {
-    QString string = QString::number(daneR->getStdMoc(1));
+    QString string = QString::number(rData->getStdPower(1));
     ui->lineEdit_stdMoc->setText(string);
     ui->lineEdit_stdMoc->setReadOnly(true);
 }
@@ -338,7 +331,7 @@ void secondWindow::on_radioButton_9_clicked()
 
 void secondWindow::on_pushButton_3_clicked()
 {
-    Calculations obliczenia(parametry->getUrzadzenie());
+    Calculations calculations(parameters->getDevice());
     ui->lineEdit_stdAm->setReadOnly(true);
     ui->lineEdit_stdCs->setReadOnly(true);
     ui->lineEdit_stdMoc->setReadOnly(true);
@@ -352,7 +345,7 @@ void secondWindow::on_pushButton_3_clicked()
     ui->line_wysokosci->setVisible(true);
     ui->label_9->setVisible(true);
     ui->pushButton_3->setVisible(false);
-    vector = obliczenia.findDifferentHeight(*daneR, parametry->getUrzadzenie());
+    vector = calculations.findDifferentHeight(*rData, parameters->getDevice());
     QString tempString;
 
     if(vector.size()<2){
@@ -376,39 +369,39 @@ void secondWindow::on_pushButton_3_clicked()
                 labelName = "timeEdit_start_" + QString::number(i);
                 QTimeEdit * TimeEditlabel = secondWindow::findChild <QTimeEdit *>(labelName);
                 TimeEditlabel->setVisible(true);
-                tempString = QString::fromStdString(daneR->getGodzina(vector[i-1]));
+                tempString = QString::fromStdString(rData->getHour(vector[i-1]));
                 TimeEditlabel->setTime(QTime::fromString(tempString, "HH:mm:ss"));
 
                 labelName = "timeEdit_koniec_" + QString::number(i);
                 TimeEditlabel = secondWindow::findChild <QTimeEdit *>(labelName);
                 TimeEditlabel->setVisible(true);
-                tempString = QString::fromStdString(daneR->getGodzina(vector[i]));
+                tempString = QString::fromStdString(rData->getHour(vector[i]));
                 TimeEditlabel->setTime(QTime::fromString(tempString,"HH:mm:ss"));
 
                 labelName = "lineEdit_" + QString::number(i);
                 QLineEdit * LineEditlabel = secondWindow::findChild <QLineEdit *>(labelName);
                 LineEditlabel->setVisible(true);
-                tempString = QString::number(obliczenia.average(*daneR,vector[i-1],vector[i],"wysokosc"));
+                tempString = QString::number(calculations.average(*rData,vector[i-1],vector[i],"wysokosc"));
                 LineEditlabel->setText(tempString);
             }
     }
 
     ui->pushButton_4->setVisible(true);
 
-    noweParametry = *parametry;
+    newParameters = *parameters;
     tempString = ui->lineEdit_stdAm->text();
-    noweParametry.setStdAm(tempString.toDouble());
+    newParameters.setStdAm(tempString.toDouble());
     tempString = ui->lineEdit_stdCs->text();
-    noweParametry.setStdCs(tempString.toDouble());
+    newParameters.setStdCs(tempString.toDouble());
     tempString = ui->lineEdit_stdMoc->text();
-    noweParametry.setStdMoc(tempString.toDouble());
-    noweParametry.setPStdAm(obliczenia.calculatePAm(parametry,noweParametry.getStdAm(),noweParametry.getStdCs()));
-    noweParametry.setPStdCs(obliczenia.calculatePCs(parametry,noweParametry.getStdAm(),noweParametry.getStdCs()));
+    newParameters.setStdMoc(tempString.toDouble());
+    newParameters.setPStdAm(calculations.calculatePAm(parameters,newParameters.getStdAm(),newParameters.getStdCs()));
+    newParameters.setPStdCs(calculations.calculatePCs(parameters,newParameters.getStdAm(),newParameters.getStdCs()));
 }
 
 void secondWindow::on_pushButton_4_clicked()
 {
-    thirdWindow *e = new thirdWindow(daneR, parametry, &noweParametry, vector);
+    thirdWindow *e = new thirdWindow(rData, parameters, &newParameters, vector);
     hide();
     e->exec();
 }
