@@ -189,6 +189,6 @@ Parameters::Parameters(std::string deviceString)
    }
 
 
-   void Parameters::setUrzadzenie(std::string value){
+   void Parameters::setDevice(std::string value){
        device = value;
    }
