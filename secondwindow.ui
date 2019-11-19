@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>secondWindow</class>
+ <widget class="QMainWindow" name="secondWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1071</width>
+    <height>829</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="labl_parNowe_10">
+    <property name="geometry">
+     <rect>
+      <x>1461</x>
+      <y>95</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="label_parNowe_13">
+    <property name="geometry">
+     <rect>
+      <x>1911</x>
+      <y>95</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>1011</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1. Fragment pustej taśmy do obliczenia standardu:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_kalibracja">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>90</y>
+      <width>921</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_parametry_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>89</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kalibracja:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gotowe</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>210</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_standard">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>1011</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>1011</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2. Podaj nowy standard</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>270</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>StdAm:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_stdAm">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>113</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_stdCs">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>290</y>
+      <width>113</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>270</y>
+      <width>109</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="text">
+        <string>Proponowany</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="text">
+        <string>Domyślny</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_6">
+       <property name="text">
+        <string>Własny</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>270</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>StdCs:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_stdMoc">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>290</y>
+      <width>113</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>270</y>
+      <width>109</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QRadioButton" name="radioButton_7">
+       <property name="text">
+        <string>Proponowany</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_8">
+       <property name="text">
+        <string>Domyślny</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_9">
+       <property name="text">
+        <string>Własny</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>270</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>StdMoc:</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>37</y>
+      <width>971</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_parNazwa_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Dt_Cs:</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="margin">
+        <number>2</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <widget class="Line" name="line_12">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_parNazwa_2">
+       <property name="text">
+        <string>Dt_Am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="Line" name="line_11">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_parNazwa_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Overlap:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5" rowspan="2">
+      <widget class="Line" name="line_10">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_parNazwa_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>A0:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7" rowspan="2">
+      <widget class="Line" name="line_9">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QLabel" name="label_parNazwa_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>A1:   </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="9" rowspan="2">
+      <widget class="Line" name="line_8">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="10">
+      <widget class="QLabel" name="label_parNazwa_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>A2:    </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="11" rowspan="2">
+      <widget class="Line" name="line_7">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="12">
+      <widget class="QLabel" name="label_parNazwa_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Q0:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="13" rowspan="2">
+      <widget class="Line" name="line_6">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="14">
+      <widget class="QLabel" name="label_parNazwa_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>QA</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="15" rowspan="2">
+      <widget class="Line" name="line_5">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="16">
+      <widget class="QLabel" name="label_parNazwa_9">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>QM:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="17" rowspan="2">
+      <widget class="Line" name="line_4">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="18">
+      <widget class="QLabel" name="label_parNazwa_10">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>MM0:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="19" rowspan="2">
+      <widget class="Line" name="line_3">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="20">
+      <widget class="QLabel" name="label_parNazwa_11">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>MM1:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="21" rowspan="2">
+      <widget class="Line" name="line_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="22">
+      <widget class="QLabel" name="label_parNazwa_12">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>MM2:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="23" rowspan="2">
+      <widget class="Line" name="line">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="24">
+      <widget class="QLabel" name="label_parNazwa_13">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>WspH:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="25" rowspan="2">
+      <widget class="Line" name="line_46">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="26">
+      <widget class="QLabel" name="label_parNazwa_14">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Std Am:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="27" rowspan="2">
+      <widget class="Line" name="line_47">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="28">
+      <widget class="QLabel" name="label_parNazwa_15">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Std Cs:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="29" rowspan="2">
+      <widget class="Line" name="line_48">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="30">
+      <widget class="QLabel" name="label_parNazwa_16">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Std Moc:</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_dtCs">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_dtAm">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_overlap">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QLabel" name="label_wspA0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="8">
+      <widget class="QLabel" name="label_wspA1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>A1:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="10">
+      <widget class="QLabel" name="label_wspA2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="12">
+      <widget class="QLabel" name="label_wspQ0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Q0:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="14">
+      <widget class="QLabel" name="label_wspQA">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="16">
+      <widget class="QLabel" name="label_wspQM">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="18">
+      <widget class="QLabel" name="label_wspMM0">
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="20">
+      <widget class="QLabel" name="label_wspMM1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="22">
+      <widget class="QLabel" name="label_wspMM2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="24">
+      <widget class="QLabel" name="label_parWspH">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="26">
+      <widget class="QLabel" name="label_parStdAm">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="28">
+      <widget class="QLabel" name="label_parStdCs">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="30">
+      <widget class="QLabel" name="label_parStdMoc">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1.0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line_1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>921</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_parametry">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>89</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Parametry:</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>160</y>
+      <width>476</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Początek:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTimeEdit" name="timeEdit">
+       <property name="displayFormat">
+        <string>HH:mm:ss</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Koniec:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTimeEdit" name="timeEdit_2">
+       <property name="displayFormat">
+        <string>HH:mm:ss</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>28</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Szukaj Automatycznie</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>270</y>
+      <width>109</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioButton_1">
+       <property name="text">
+        <string>Proponowany</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="text">
+        <string>Domyślny</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="text">
+        <string>Własny</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>360</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gotowe</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_wysokosci">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>1011</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>1011</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3. Wyszukiwanie różnych wysokości warstwy na taśmie</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>432</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_1">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>432</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_1">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>432</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_1">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>432</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_1">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>432</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>660</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gotowe</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>432</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>464</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>464</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>464</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_2">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>464</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_2">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>464</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_2">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>464</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_7">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>624</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_7">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>624</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>624</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_7">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>624</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_7">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>624</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_7">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>624</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>560</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_5">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>560</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_5">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>560</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_5">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>560</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>560</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>560</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>528</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_4">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>528</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_4">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>528</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>528</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>528</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>528</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>592</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_6">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>592</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_6">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>592</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_6">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>592</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_6">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>592</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_6">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>592</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_start_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>496</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>496</y>
+      <width>68</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_koniec_3">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>496</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Koniec:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wysokosc_3">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>496</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wysokość:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WysokoscStart_3">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>496</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Początek:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit_koniec_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>496</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>HH:mm:ss</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1071</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
