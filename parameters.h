@@ -53,7 +53,7 @@ public:
     void setP1(double val);
     void setP2(double val);
     void setP3(double val);
-    void setUrzadzenie(std::string value);
+    void setDevice(std::string value);
 
 
 private:
